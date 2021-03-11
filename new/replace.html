@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            s='AUTCUTCA'
+            r=''
+            for(var i=0;i<=s.length;i++)
+            {
+                if(s[i]=='A')
+                {
+                   r=r + 'T' 
+                }
+                else if(s[i]=='T')
+                {
+                    r=r + 'A'
+                }
+                else if(s[i]=='C')
+                {
+                    r=r + 'U'
+                }
+                else if(s[i]=='U')
+                {
+                    r=r + 'C'
+                }
+                else{
+                    break;
+                }
+            }
+            console.log(r)
+        </script>
+    </body>
+</html>

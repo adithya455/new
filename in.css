@@ -1,0 +1,38 @@
+.instagram-post{
+    width:500px;
+    border:1px solid grey;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.post-header-left{
+    display:flex;
+}
+
+.post-title h5,p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.post-header-left img{
+    width: 30px;
+    height:30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-footer{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

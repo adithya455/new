@@ -1,0 +1,83 @@
+<html>
+<head>
+</head>
+<body>
+<form>
+<table >
+    <form action="" method="POST" >  
+<tr>
+	<td><label> REGNO </label></td>
+	  <td>  <input type="text" id='x' name='x1' required></td>
+</tr>
+<tr>
+	<td><label> NAME </label</td>
+	<td><input type="text" id='n' name='n1' required></td>
+</tr>
+<tr>
+   <td>	<label> GENDER </label></td>
+	<td><input type="radio" name="gender" id="ge" value="male">male</td>
+</tr>
+ <tr>
+	<td></td>
+   <td><input type="radio" name="gender" id="ge" value="female">female </td>
+</tr>
+<tr>
+	<td><label> ADDRESS </label></td>
+	<td><textarea id="ad" name="address" rows="5" col="40" required></textarea></td>
+</tr>
+<tr>
+		<td><label> EMAIL</label></td>
+	    <td><input type="text" id='ema' name='email' required></td>
+			
+</tr>
+<tr>
+	   <td>	<label> COURSE</label></td>
+		<td><select id="crs" name='course'>
+            <option value="">---------select--------</option>
+				<option value="CS">cs</option>
+				<option value="CE">ce</option>
+				<option value="MECH">mech</option>
+				<option value="IC">ic</option>
+                </select></td></tr>
+<tr>
+	<td><label> SEMESTER </label></td>
+	   <td>	
+	    <input type="radio" name="rd" id="s" value="s1">s1
+		<input type="radio" name="rd" id="s" value="s2">s2
+		<input type="radio" name="rd" id="s" value="s3"> s3<br>
+		<input type="radio" name="rd" id="s" value="s4">s4
+		<input type="radio" name="rd" id="s" value="s5">s5
+		<input type="radio" name="rd" id="s" value="s6">s6
+</tr>
+<tr>
+	  <td> 	<label> USERNAME </label></td>
+	    <td><input type="text" id='us' name='user' required></td>
+</tr>
+<tr>
+		<td><label> PASSWORD </label></td>
+	    <td><input type="password" id='pa' name='password' required></td>
+</tr>
+<tr>
+<td><button onclick=click() >submit</button></td>
+</tr>
+</table>
+</form>
+<script>
+	alert("hi")
+function click(){
+    var reg=document.getElementById(x).value;
+    var name=document.getElementById(n1).value;
+    var gen=document.getElementById(ge).value;
+    var addr=document.getElementById(ad).value;
+    var ema=document.getElementById(ema).value;
+    var course=document.getElementById(crs).value;
+    var sem=document.getElementById(s).value;
+    var user=document.getElementById(us).value;
+    var pass=document.getElementById(pa).value;
+    alert('reg no:'+reg +'\n name:'+name +'\n gen:'+gen+'\naddr:'+addr+'\nema'+ema +'\ncourse':+course+'\nsem:'+sem+'\nuser:'+user+'\npass:'+pass);
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function makeobj(a,b){
+                var s={
+                    a: a,
+                    b: b,
+                    add:function (){
+                        return this.a+this.b;
+                    },
+                    sub:function (){
+                        return this.a-this.b;
+                    },
+                    mul:function (){
+                        return this.a*this.b;
+                    },
+                    div:function (){
+                        return this.a/this.b;
+                    }
+                }
+                return s
+            }
+            var obj=makeobj(12,67)
+            console.log("add",obj.add());
+            console.log("sub",obj.sub());
+            console.log("mul",obj.mul());
+            console.log("div",obj.div());
+
+            
+
+        </script>
+    </body>
+</html>
